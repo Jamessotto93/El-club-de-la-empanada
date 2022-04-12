@@ -11,32 +11,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin="anonymous"></script>
-    <script src="./js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <title>El club de la empanada</title>
 </head>
 <body>
 
-    <nav class="menu">
-        <label class="logo">Club de la empanada</label>
-        <ul class="menu__items">
-            <li class="active"><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/productos.html">Productos</a></li>
-            <li><a href="./pages/locales.html">Locales</a></li>
-            <li><a href="./pages/historia.html">Historia</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-        <span class="btn__menu">
-            <i class="fa fa-bars"></i>
-        </span>
-    </nav>
-    
+    <header class="header-principal">
+        <nav>
+            <div>
+                <img src="./img/empanada-club-transparente.png" alt="" class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a class="active" href="./index.html">Inicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/locales.html">Locales</a></li>
+                <li><a href="./pages/historia.html">Historia</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="banner-text">
+            <h1>300Gr de puro<span>SABOR</span></h1>
+        <div>
+            <a href="./pages/productos.html" class="button1">Gustos</a>
+            <a href="./pages/locales.html" class="button1">Locales</a>
+        </div>
+        </div>
+    </header>
 
     <section>
-        <!-- hero image -->
-        <div class="hero-image">
-            <img src="./img/empanada-galeria.jpg">
-        </div>
 
         <div class="contenedor">
             <h1 class="titulo__inicio">Productos Estrellas</h1>
