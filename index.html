@@ -13,19 +13,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <title>El club de la empanada</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-
+    <!-- Imagen Principal -->
     <header class="header-principal">
         <nav>
             <div>
                 <img src="./img/empanada-club-transparente.png" alt="" class="logo">
             </div>
+            <!-- Menu Hamburguesa -->
             <input type="checkbox" id="check">
             <label for="check" class="bar-btn">
                 <i class="fas fa-bars"></i>
             </label>
-            <ul class="nav-menu">
+            <!-- Menu -->
+            <ul class="nav-menu animate__animated animate__slideInLeft">
                 <li><a class="active" href="./index.html">Inicio</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/locales.html">Locales</a></li>
@@ -33,21 +36,25 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <!-- Texto Del Header -->
         <div class="banner-text">
-            <h1>300Gr de puro<span>SABOR</span></h1>
+            <h1 class="animate__animated animate__lightSpeedInRight"> 300Gr de puro<span>SABOR</span></h1>
         <div>
+            <!-- Botones Del Header -->
             <a href="./pages/productos.html" class="button1">Gustos</a>
             <a href="./pages/locales.html" class="button2">Locales</a>
         </div>
         </div>
     </header>
 
+
+
     <section>
-
+        <!-- Seccion Productos Estrellas -->
         <div class="contenedor">
-            <h1 class="titulo__inicio">Productos Estrellas</h1>
+            <h1 class="titulo__inicio animate__animated animate__tada">Productos Estrellas</h1>
             <div class="contenedor-conciertos">
-
+                <!--  Productos Estrellas-->
                 <div class="card" style="background-image: url(./img/empanadas.jpg);">
                     <div class="textos">
                         <h3>Carne</h3>

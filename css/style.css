@@ -10,7 +10,7 @@ body {
     font-family: 'Shadows Into Light', cursive;
     background-image: url("../img/45degreee_fabric.png");
 }
-
+/* Header */
 .header-principal {
     width: 100%;
     height: 100vh;
@@ -19,7 +19,7 @@ body {
     background-position: center;
     background-size: cover;
 }
-
+/* Menu */
 nav {
     height: 100px;
     width: 100%;
@@ -27,19 +27,19 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
+/* Logo */
 .logo {
     width: 140px;
     margin-left: 20px;
 }
-
+/* Menu Hamburguesa */
 .bar-btn {
     font-size: 25px;
     color: #fff;
     margin-right: 20px;
     cursor: pointer;
 }
-
+/* Menu */
 .nav-menu {
     position: fixed;
     width: 100%;
@@ -49,56 +49,56 @@ nav {
     text-align: center;
     transition: all .5s;
 }
-
+/* Menu li */
 .nav-menu li{
     display: none;
     line-height: 30px;
     margin: 50px 0;
     transition: all .5s;
 }
-
+/* Menu li a */
 .nav-menu li a {
     color: #fff;
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 600;
 }
-
+/* Hover Menu */
 .nav-menu li a.active, .nav-menu li a:hover{
     color: #e9183b;
     transition: .3s;
 }
-
+/* Check para activar el menu hamburguesa */
 #check {
     display: none;
 }
-
+/* Check para activar el menu hamburguesa */
 #check:checked ~ .nav-menu {
     height: 100vh;
 }
-
+/* Check para activar el menu hamburguesa */
 #check:checked ~ .nav-menu li {
     display: block;
 }
-
+/* Texto Header */
 .banner-text {
     padding: 0 30px;
     margin-top: 150px;
     text-align: center;
     color: #fff;
 }
-
+/* Texto Header */
 .banner-text h1 {
     font-size: 50px;
     margin-bottom: 30px;
     letter-spacing: 12px;
 }
-
+/* Texto Header */
 .banner-text span {
     color: #e9183b;
 }
 
-
+/* Boton Header */
 .button1 {
     margin-right: 40px;
     padding: 10px 30px;
@@ -106,13 +106,13 @@ nav {
     color: #fff;
     border-radius: 5px;
 }
-
+/* Boton Header */
 .button1:hover {
     background-color: #fff;
     color: #e9183b;
     transition: .5s;
 }
-
+/* Boton 2 Header */
 .button2 {
     margin-right: 40px;
     padding: 10px 30px;
@@ -120,13 +120,13 @@ nav {
     color: #e9183b;
     border-radius: 5px;
 }
-
+/* Boton Hover Header */
 .button2:hover {
     background-color:#e9183b;
     color: #fff;
     transition: .5s;
 }
-
+/* Mediaquery */
 @media screen and (min-width:768px) {
     .logo {
         margin-left: 50px;
