@@ -8,159 +8,38 @@
 
 body {
     font-family: 'Shadows Into Light', cursive;
-    background-image: url("../img/45degreee_fabric.png");
+    background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-/* Header */
-.header-principal {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/EMPANADAS.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-/* Menu */
-nav {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* Logo */
-.logo {
-    width: 140px;
+.navbar-brand{
     margin-left: 20px;
 }
-/* Menu Hamburguesa */
-.bar-btn {
+
+.navbar-nav {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    color: #fff;
-    margin-right: 20px;
-    cursor: pointer;
+    font-weight: bold;
 }
-/* Menu */
-.nav-menu {
-    position: fixed;
-    width: 100%;
-    height: 0vh;
-    top: 100px;
-    background: #000000;
-    text-align: center;
-    transition: all .5s;
-    z-index: 100;
-}
-/* Menu li */
-.nav-menu li{
-    display: none;
-    line-height: 30px;
-    margin: 50px 0;
-    transition: all .5s;
-}
-/* Menu li a */
-.nav-menu li a {
-    color: #fff;
-    font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-/* Hover Menu */
-.nav-menu li a.active, .nav-menu li a:hover{
-    color: #e9183b;
-    transition: .3s;
-}
-/* Check para activar el menu hamburguesa */
-#check {
-    display: none;
-}
-/* Check para activar el menu hamburguesa */
-#check:checked ~ .nav-menu {
-    height: 100vh;
-}
-/* Check para activar el menu hamburguesa */
-#check:checked ~ .nav-menu li {
-    display: block;
-}
-/* Texto Header */
-.banner-text {
-    padding: 0 30px;
-    margin-top: 150px;
-    text-align: center;
-    color: #fff;
-}
-/* Texto Header */
-.banner-text h1 {
-    font-size: 50px;
-    margin-bottom: 30px;
-    letter-spacing: 12px;
-}
-/* Texto Header */
-.banner-text span {
+
+.nav-link {
     color: #e9183b;
 }
 
-/* Boton Header */
-.button1 {
-    margin-right: 40px;
-    padding: 10px 30px;
-    background-color: #e9183b;
-    color: #fff;
-    border-radius: 5px;
+.navbar-collapse {
+    justify-content: end;
 }
-/* Boton Header */
-.button1:hover {
-    background-color: #fff;
+
+.container-fluid {
+    height: auto;
+    flex-direction: column;
+}
+
+.navbar-light .navbar-nav .nav-link {
     color: #e9183b;
-    transition: .5s;
 }
-/* Boton 2 Header */
-.button2 {
-    margin-right: 40px;
-    padding: 10px 30px;
-    background-color: #fff;
-    color: #e9183b;
-    border-radius: 5px;
-}
-/* Boton Hover Header */
-.button2:hover {
-    background-color:#e9183b;
-    color: #fff;
-    transition: .5s;
-}
-/* Mediaquery */
-@media screen and (min-width:768px) {
-    .logo {
-        margin-left: 50px;
-    }
-    nav {
-        height: 100px;
-    }
-    .bar-btn {
-        display: none;
-    }
-    .nav-menu {
-        position: relative;
-        height: 100px;
-        top: 0;
-        background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
-    }
-    .nav-menu li {
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none;
-    }
-    .nav-menu li a {
-        font-size: 22px;
-    }
-    .banner-text h1 {
-        font-size: 70px;
-        margin-bottom: 30px;
-    }
-}
+
 
 
 .titulo__inicio {
@@ -214,12 +93,9 @@ nav {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .subtitle {
@@ -230,15 +106,6 @@ nav {
     font-size: 40px;
 }
 
-.container__text {
-    color: #000000;
-    font-size: 40px;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-.container__img {
-    height: 500px;
-}
 
 .footer {
     height: 4rem;
@@ -250,17 +117,7 @@ nav {
     padding-top: 30px;
 }
 
-.contenedor__productos {
-    display: grid;
-    grid-template-columns: 600px 600px 600px;
-    align-items: center;
-    padding-top: 90px;
-    padding-bottom: 30px;
-}
 
-.contenedor__productos-img {
-    grid-column: 1 / span 2;
-}
 
 .contenedor__locales {
     display: flex;
