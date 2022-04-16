@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -34,25 +36,159 @@
             </div>
         </nav>
         </header>
+        <!-- Contenedor de locales -->
     <section>
-    <div class="contenedor__locales">
-        <div class="locales"><h1>Nuestros Locales</h1></div>
-        <h1 class="contenedor__locales-texto">Tigre centro</h1>
-        <div class="contenedor__locales-img"><img src="../img/local.jpg"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10656.903865266613!2d-58.47397978690596!3d-34.58426088998923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d73a33fd27%3A0x9ecd6cc036e57b33!2sEl%20Club%20de%20la%20Empanada!5e0!3m2!1ses-419!2sar!4v1648596409174!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h1 class="contenedor__locales-texto">Tigre centro</h1>
-        <div class="contenedor__locales-img"><img src="../img/local.jpg"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10656.903865266613!2d-58.47397978690596!3d-34.58426088998923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d73a33fd27%3A0x9ecd6cc036e57b33!2sEl%20Club%20de%20la%20Empanada!5e0!3m2!1ses-419!2sar!4v1648596409174!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h1 class="contenedor__locales-texto">Tigre centro</h1>
-        <div class="contenedor__locales-img"><img src="../img/local.jpg"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10656.903865266613!2d-58.47397978690596!3d-34.58426088998923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d73a33fd27%3A0x9ecd6cc036e57b33!2sEl%20Club%20de%20la%20Empanada!5e0!3m2!1ses-419!2sar!4v1648596409174!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h1 class="contenedor__locales-texto">Tigre centro</h1>
-        <div class="contenedor__locales-img"><img src="../img/local.jpg"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10656.903865266613!2d-58.47397978690596!3d-34.58426088998923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d73a33fd27%3A0x9ecd6cc036e57b33!2sEl%20Club%20de%20la%20Empanada!5e0!3m2!1ses-419!2sar!4v1648596409174!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h1 class="contenedor__locales-texto">Tigre centro</h1>
-        <div class="contenedor__locales-img"><img src="../img/local.jpg"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10656.903865266613!2d-58.47397978690596!3d-34.58426088998923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d73a33fd27%3A0x9ecd6cc036e57b33!2sEl%20Club%20de%20la%20Empanada!5e0!3m2!1ses-419!2sar!4v1648596409174!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <div class="col-md-4 mt-5">
+            <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1900/1080?image=231" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">TIGRE</h4>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <a href="https://goo.gl/maps/drPW7JdCdy62"><address class="font-italic">Piazza del Colosseo, 1, 00184 Roma RM</address></a>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                <div class="col">
+                    <a href=""><i class="fas fa-map"></i></a>
+                </div>
+                <div class="col">
+                    <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col">
+                    <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Termina Contenedor de locales -->
+        <div class="col-md-4 mt-5">
+            <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1900/1080?image=231" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">TIGRE</h4>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <a href="https://goo.gl/maps/drPW7JdCdy62"><address class="font-italic">Piazza del Colosseo, 1, 00184 Roma RM</address></a>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                <div class="col">
+                    <a href=""><i class="fas fa-map"></i></a>
+                </div>
+                <div class="col">
+                    <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col">
+                    <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Termina Contenedor de locales -->
+        <div class="col-md-4 mt-5">
+            <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1900/1080?image=231" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">TIGRE</h4>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <a href="https://goo.gl/maps/drPW7JdCdy62"><address class="font-italic">Piazza del Colosseo, 1, 00184 Roma RM</address></a>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                <div class="col">
+                    <a href=""><i class="fas fa-map"></i></a>
+                </div>
+                <div class="col">
+                    <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col">
+                    <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Termina Contenedor de locales -->
+        <div class="col-md-4 mt-5">
+            <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1900/1080?image=231" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">TIGRE</h4>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <a href="https://goo.gl/maps/drPW7JdCdy62"><address class="font-italic">Piazza del Colosseo, 1, 00184 Roma RM</address></a>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                <div class="col">
+                    <a href=""><i class="fas fa-map"></i></a>
+                </div>
+                <div class="col">
+                    <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col">
+                    <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Termina Contenedor de locales -->
+        <div class="col-md-4 mt-5">
+            <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1900/1080?image=231" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">TIGRE</h4>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <a href="https://goo.gl/maps/drPW7JdCdy62"><address class="font-italic">Piazza del Colosseo, 1, 00184 Roma RM</address></a>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                <div class="col">
+                    <a href=""><i class="fas fa-map"></i></a>
+                </div>
+                <div class="col">
+                    <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col">
+                    <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Termina Contenedor de locales -->
+        <div class="col-md-4 mt-5">
+            <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1900/1080?image=231" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">TIGRE</h4>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <a href="https://goo.gl/maps/drPW7JdCdy62"><address class="font-italic">Piazza del Colosseo, 1, 00184 Roma RM</address></a>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                <div class="col">
+                    <a href=""><i class="fas fa-map"></i></a>
+                </div>
+                <div class="col">
+                    <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col">
+                    <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Termina Contenedor de locales -->
     </section>
 
 
