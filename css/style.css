@@ -128,15 +128,35 @@ body {
 }
 
 /* Contenedor de locales */
+.container {  display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 20px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Uno Dos Tres"
+      "Cuatro Cinco Seis";
+  }
+  
+  .Uno { grid-area: Uno; }
+  
+  .Dos { grid-area: Dos; }
+  
+  .Tres { grid-area: Tres; }
+  
+  .Cuatro { grid-area: Cuatro; }
+  
+  .Cinco { grid-area: Cinco; }
+  
+  .Seis { grid-area: Seis; }
+  
 .mt-5 {
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 50%;
+    width: 100%;
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
-	display: grid;
-	grid-template-columns: 3fr;
 	gap: 20px;
 }
 hr {
