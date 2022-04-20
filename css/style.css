@@ -6,6 +6,8 @@
     text-decoration: none;
 }
 
+/* ! ----------------------------------CUERPO------------------------------------------------------------------- */
+/* Cuerpo */
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: #FDC830;  /* fallback for old browsers */
@@ -13,41 +15,56 @@ body {
     background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+/* ! ----------------------------------FINALIZA CUERPO---------------------------------------------------------- */
+
+/* ! ------------------------------------------INDEX------------------------------------------------- */
+/* Menu */
 .navbar-brand{
     margin-left: 20px;
 }
 
+/* Menu */
 .navbar-nav {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     font-weight: bold;
 }
 
+
+/* Menu */
 .nav-link {
     color: #e9183b;
 }
 
+
+/* Menu */
 .navbar-collapse {
     justify-content: end;
 }
 
+
+/* Menu */
 .container-fluid {
     height: auto;
     flex-direction: column;
 }
 
+
+/* Termina Menu */
 .navbar-light .navbar-nav .nav-link {
     color: #e9183b;
 }
 
 
-
+/* Titulo "Productos Estrellas" */
 .titulo__inicio {
     text-align: center;
     font-size: 4vw;
     font-family: 'Shadows Into Light', cursive;
 }
-/* Contenedor */
+
+
+/* Contenedor de Productos Estrellas */
 .contenedor {
 	width: 90%;
 	max-width: 1200px;
@@ -59,18 +76,16 @@ body {
 }
 
 
-.titulo {
-	font-size: 24px;
-	padding: 20px 0;
-}
-
-.contenedor-conciertos {
+/* Contenedor de Productos Estrellas */
+.contenedor-productos-estrellas {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
 
-.card {
+
+/* Contenedor de Productos Estrellas */
+.tarjeta-productos-estrellas {
 	border-radius: 10px;
 	min-height: 200px;
 	font-weight: bold;
@@ -79,9 +94,12 @@ body {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
+    background-image: url("../img/empanadas2.jpg");
 }
-/* Termina contenedor */
-.card .textos {
+
+
+/* Contenedor de Productos Estrellas */
+.tarjeta-productos-estrellas__texto {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -91,30 +109,33 @@ body {
     color: #fff;
     text-shadow: 2px 2px 2px #e9183b;
 }
+/* ! ----------------------------------FINALIZA INDEX-------------------------------------------------------- */
 
+/* ! ----------------------------------PRODUCTOS------------------------------------------------------------ */
+/* Contenedor De Pagina Productos */
 .container {
     padding-top: 200px;
     padding-bottom: 100px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.subtitle {
-    color: #000000;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 40px;
+/* Texto Adentro Del Contenedor De Productos */
+.tarjeta-productos__title {
+    font-size: 3vh;
+    text-shadow: 2px 2px 2px #e9183b;
 }
 
 
-.footer {
-    height: 4rem;
-    background-color: #e9183b;
-    color:#fff;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 21px;
-    text-align: center;
-    padding-top: 30px;
+.tarjeta-productos {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+    background-color: #ffffff;
 }
 
 
@@ -126,30 +147,11 @@ body {
     font-family: 'Shadows Into Light', cursive;
     font-size: 30px;
 }
+/* ! ----------------------------------FINALIZA PRODUCTOS------------------------------------------------------- */
 
+
+/* ! ----------------------------------LOCALES------------------------------------------------------------------ */
 /* Contenedor de locales */
-.container {  display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
-    gap: 20px 50px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Uno Dos Tres"
-      "Cuatro Cinco Seis";
-  }
-  
-  .Uno { grid-area: Uno; }
-  
-  .Dos { grid-area: Dos; }
-  
-  .Tres { grid-area: Tres; }
-  
-  .Cuatro { grid-area: Cuatro; }
-  
-  .Cinco { grid-area: Cinco; }
-  
-  .Seis { grid-area: Seis; }
-  
 .mt-5 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -159,24 +161,36 @@ body {
 	padding: 40px 0;
 	gap: 20px;
 }
+
+
+/* Contenedor de locales selector de Direccion */
 hr {
     border-top: 1px solid #007bff;
     width:70%;
 }
 
-a {color: #000;}
-/* Termina El Contenedor de locales */
-address{
-margin-bottom: 0px;
+
+/* Selector De Direccion Color */
+a {
+    color: #000000;
 }
 
+
+/* Direccion */
+address {
+    margin-bottom: 10px;
+}
+/* ! ----------------------------------FINALIZA LOCALES--------------------------------------------------------- */
+
+/* ! ----------------------------------HISTORIA----------------------------------------------------------------- */
 .about-section{
     display: flex;
     background-size: 55%;
     background-color: #fdfdfd;
     height: 600px;
-    padding: 100px 0;
+    padding-top: 100px;
 }
+
 
 .inner-container {
     display: flex;
@@ -186,11 +200,14 @@ margin-bottom: 0px;
     box-shadow: #0e1e251f 0px 2px 4px 0px, #0e1e2552 0px 2px 16px 0px;
 
 }
+
+
 .inner-container nosotros {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
 }
+
 
 .text{
     font-size: 15px;
@@ -199,29 +216,28 @@ margin-bottom: 0px;
     line-height: 30px;
     text-align: justify;
 }
+
+
 .nosotros {
 color: #F85370;
 font-size: 40px;
 }
+/* ! ----------------------------------FINALIZA HISTORIA-------------------------------------------------------- */
 
+
+/* ! ----------------------------------CONTACTO----------------------------------------------------------------- */
 label {
     display:block;
     margin-top:20px;
     letter-spacing:1px;
 }
- 
-.principal {
-    display:block;
-    margin:0 auto;
-    width:510px;
-    color: #666666;
-    font-family:Arial;
-}
+
 
 form {
     margin:0 auto;
     width:400px;
 }
+
 
 input, textarea {
     width:380px;
@@ -233,11 +249,13 @@ input, textarea {
     font-size:10px;
     color:#ffffff;
 }
- 
+
+
 textarea {
     height:150px;
 }
- 
+
+
 #submit {
     width:85px;
     height:35px;
@@ -246,12 +264,14 @@ textarea {
     cursor:pointer;
 }
 
+
 .contenedor__contacto {
     text-align: center;
     display: flex;
     padding-bottom: 106px;
     padding-top: 60px;
 }
+
 
 .contenedor__titulo {
     color: #000000;
@@ -260,3 +280,17 @@ textarea {
     text-align: center;
     padding-top: 40px;
 }
+/* ! ---------------------------------FINALIZA CONTACTO--------------------------------------------------------- */
+
+/* ! ----------------------------------FOOTER------------------------------------------------------------------- */
+/* Footer */
+.footer {
+    height: 4rem;
+    background-color: #e9183b;
+    color:#fff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 21px;
+    text-align: center;
+    padding-top: 30px;
+}
+/* ! ----------------------------------FINALIZA FOOTER--------------------------------------------------------- */
