@@ -59,7 +59,7 @@ body {
 /* Titulo "Productos Estrellas" */
 .titulo__inicio {
     text-align: center;
-    font-size: 4vw;
+    font-size: 6vw;
     font-family: 'Shadows Into Light', cursive;
 }
 
@@ -105,9 +105,13 @@ body {
 	flex-direction: column;
 	justify-content: center;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1vw;
     color: #fff;
     text-shadow: 2px 2px 2px #e9183b;
+}
+
+h3 {
+    font-size: 3vw;
 }
 /* ! ----------------------------------FINALIZA INDEX-------------------------------------------------------- */
 
