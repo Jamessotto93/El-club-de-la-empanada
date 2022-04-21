@@ -187,44 +187,76 @@ address {
 /* ! ----------------------------------FINALIZA LOCALES--------------------------------------------------------- */
 
 /* ! ----------------------------------HISTORIA----------------------------------------------------------------- */
-.about-section{
+.py-xl-5{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.fit-cover {
+    object-fit: cover;
+}
+
+.bs-icon {
+    --bs-icon-size: .75rem;
     display: flex;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    height: 600px;
-    padding-top: 100px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size) * 2);
+    height: calc(var(--bs-icon-size) * 2);
+    color: var(--bs-primary);
 }
 
-
-.inner-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #fdfdfd;
-    padding: 150px;
-    box-shadow: #0e1e251f 0px 2px 4px 0px, #0e1e2552 0px 2px 16px 0px;
-
+.bs-icon-xs {
+    --bs-icon-size: 1rem;
+    width: calc(var(--bs-icon-size) * 1.5);
+    height: calc(var(--bs-icon-size) * 1.5);
 }
 
-
-.inner-container nosotros {
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
+.bs-icon-sm {
+    --bs-icon-size: 1rem;
 }
 
-
-.text{
-    font-size: 15px;
-    padding-top: 40px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
+.bs-icon-md {
+    --bs-icon-size: 1.5rem;
 }
 
+.bs-icon-lg {
+    --bs-icon-size: 2rem;
+}
 
-.nosotros {
-color: #F85370;
-font-size: 40px;
+.bs-icon-xl {
+    --bs-icon-size: 2.5rem;
+}
+
+.bs-icon.bs-icon-primary {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-primary-light {
+    color: var(--bs-primary);
+    background: rgba(var(--bs-primary-rgb), .2);
+}
+
+.bs-icon.bs-icon-semi-white {
+    color: var(--bs-primary);
+    background: rgba(255, 255, 255, .5);
+}
+
+.bs-icon.bs-icon-rounded {
+    border-radius: .5rem;
+}
+
+.bs-icon.bs-icon-circle {
+    border-radius: 50%;
+}
+
+.col d-flex flex-column justify-content-center p-4 {
+    border-radius: 11px;
+    border-width: 19px;
+    border-color: var(--bs-pink);
 }
 /* ! ----------------------------------FINALIZA HISTORIA-------------------------------------------------------- */
 
