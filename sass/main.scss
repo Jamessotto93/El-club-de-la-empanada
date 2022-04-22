@@ -5,12 +5,12 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+@import "colores";
 
 /* ! ----------------------------------CUERPO------------------------------------------------------------------- */
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: $colordelbody;  /* fallback for old browsers */
+    background-color: $colordelbody;
     background: -webkit-linear-gradient(to right, $colordelbody, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, $colordelbody, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

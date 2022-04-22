@@ -10,11 +10,10 @@
 /* ! ----------------------------------CUERPO------------------------------------------------------------------- */
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background: #fdc830;
-  /* fallback for old browsers */
+  background-color: #fdc830;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#F37335), to(#FDC830));
-  background: linear-gradient(to right, #F37335, #FDC830);
+  background: -webkit-gradient(linear, left top, right top, from(#fdc830), to(#FDC830));
+  background: linear-gradient(to right, #fdc830, #FDC830);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
