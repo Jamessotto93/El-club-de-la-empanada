@@ -10,7 +10,7 @@
 /* ! ----------------------------------CUERPO------------------------------------------------------------------- */
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background: #FDC830;
+  background: #fdc830;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#F37335), to(#FDC830));
