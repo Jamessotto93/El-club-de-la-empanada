@@ -6,6 +6,22 @@
     text-decoration: none;
 }
 @import "colores";
+/* ! ----------------------------------MAP------------------ */
+$estilos: (
+    color: #000000,
+);
+/* ! ----------------------------------MAP------------------ */
+/* ! -------------------------Mixins Aplicado----------------------------------------------- */
+@mixin color-invertido {
+    background-color: #eff700;
+}
+/* ! ----------------------------------Extend------------------ */
+%heading {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
 
 /* ! ----------------------------------CUERPO------------------------------------------------------------------- */
 body {
@@ -49,8 +65,9 @@ body {
 
 
 /* ! ----------------------------------HISTORIA----------------------------------------------------------------- */
+/* ! ------------------------------Mixins Aplicado----------------------------------------------------------------- */
 .py-xl-5{
-    background-color: #ffffff;
+    @include color-invertido;
     border-radius: 10px;
 }
 
@@ -108,12 +125,12 @@ body {
 }
 /* ! ----------------------------------FINALIZA HISTORIA-------------------------------------------------------- */
 /* ! ----------------------------------FOOTER------------------------------------------------------------------- */
-/* Footer */
+/* Footer MAP APLICADO*/
 .footer {
     height: 4rem;
-    background-color: #e9183b;
-    color:#fff;
-    font-family: 'Shadows Into Light', cursive;
+    background-color: map-get($estilos, color);
+    /* ! ----------------------------------Extend------------------ */
+    @extend %heading;
     font-size: 21px;
     text-align: center;
     padding-top: 30px;
